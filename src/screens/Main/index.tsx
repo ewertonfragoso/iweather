@@ -65,6 +65,7 @@ const Main = ({navigation}) => {
 
   useEffect(() => {
     const unsubscribe = navigation.addListener('focus', () => {
+      checkPermissions();
       loadPosition();
     });
     return unsubscribe;
@@ -194,7 +195,7 @@ const Main = ({navigation}) => {
         enableHighAccuracy: true,
         timeout: 2000,
         maximumAge: 20000,
-        showLocationDialog: false,
+        showLocationDialog: true,
       },
     );
   };
