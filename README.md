@@ -12,7 +12,7 @@
 
 <p align="center">
   <img alt="iWeather App"
-        src="assets/telas_iWeather.png" />
+        src="assets/telas_iweather.png" />
 </p>
 
 #
